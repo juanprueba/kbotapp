@@ -11,6 +11,11 @@ Then("inicio el chat") do
     click_button "Iniciar"
 end
   
-Then("muestro mensaje {string}") do |mensaje|
-    expect(page).to have_selector 'div#mensaje', text: mensaje
+Then("el mensaje {int} es {string}") do |posicion,mensaje|
+    expect(page).to have_selector "div#mensaje#{posicion}", text: mensaje
+end
+
+When("ingreso {string}") do |mensaje|
+    fill_in "ingreso", with: mensaje
+    click_button "Enviar"
 end

@@ -9,5 +9,5 @@ Feature: Feature name
     Scenario: Iniciar el chat default en español
     Given inicio la aplicación
     When inicio el chat
-    Then muestro mensaje "Hola"
+    Then el mensaje 1 es "Hola"
 
