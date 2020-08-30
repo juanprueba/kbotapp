@@ -1,9 +1,12 @@
 require 'sinatra'
 require './config'
+require './lib/kbot'
 
 historia=[]
+kbot= nil
 get '/' do
-    historia=[]
+    historia= []
+    kbot= Kbot.new 
     erb :index
 end
 
