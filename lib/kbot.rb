@@ -1,4 +1,6 @@
 Momento= ["Buen día", "Buenas tardes", "Buenas noches"]
+
+# responde automáticamente las consultas en el sitio
 class Kbot
     attr_reader :mensajes
     def initialize

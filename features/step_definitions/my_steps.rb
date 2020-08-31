@@ -1,6 +1,6 @@
 
 When("inicio la aplicación") do
-    visit '/'
+    visit '/0'
 end
   
 Then("en nombre de la app es {string}") do |nombre|
